@@ -149,7 +149,7 @@ a {
 .landing {
   height: 100vh;
   position: relative;
-  background-image: url(../images/landing.jpg);
+  background-image: url(../images/landing.jpeg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
