@@ -147,7 +147,7 @@ a {
 /* start landing  */
 
 .landing {
-  height: 120vh;
+  height: 100vh;
   position: relative;
   background-image: url(../images/landing.jpeg);
   background-repeat: no-repeat;
