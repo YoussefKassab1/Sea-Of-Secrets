@@ -67,15 +67,15 @@ a {
   align-items: center;
   position: relative;
   color: white;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  border-bottom: 1px solid #eee;
-  backdrop-filter: blur(12px);
-  border-radius: 8px;
+  padding: 10px 50px;
+  border-bottom: 1px solid #c2bcbc7f;
+  backdrop-filter: blur(4px);
+  width: 100%;
+  gap: 20px;
 }
 
 .header .container p {
-  font-size: 40px;
+  font-size: 30px;
   font-weight: bold;
 }
 
@@ -86,8 +86,13 @@ a {
   justify-content: flex-end;
 }
 
+.header nav ul {
+  display: flex;
+  gap: 20px;
+}
+
 .header nav ul li {
-  margin-right: 20px;
+  /* margin-right: 20px; */
   padding: 10px 15px;
   border: 1px solid #ddd;
   border-radius: 10px;
@@ -142,7 +147,7 @@ a {
 /* start landing  */
 
 .landing {
-  min-height: 100vh;
+  height: 100vh;
   position: relative;
   background-image: url(../images/landing.jpg);
   background-repeat: no-repeat;
