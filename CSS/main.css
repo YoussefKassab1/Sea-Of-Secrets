@@ -144,9 +144,9 @@ a {
 .landing {
   min-height: 100vh;
   position: relative;
-  background-image: url(../images/landing.jpeg);
+  background-image: url(../images/landing.jpg);
   background-repeat: no-repeat;
-  background-size: 100% contain; 
+  background-size: 100% 100%;
 }
 
 /* end landing  */
