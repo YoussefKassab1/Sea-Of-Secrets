@@ -1,3 +1,5 @@
+/* start global  */
+
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -51,6 +53,8 @@ a {
     width: 1170px;
   }
 }
+
+/* end global  */
 
 /* start header  */
 
@@ -154,4 +158,24 @@ a {
   background-size: 100% 100%;
 }
 
+@media (max-width: 991px) {
+  .landing {
+    background-size: cover;
+    background-position: center bottom;
+  }
+}
+
+.landing .container .image {
+  width: 600px;
+  max-width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.landing .container .image img {
+  width: 100%;
+  max-width: 100%;
+}
 /* end landing  */
