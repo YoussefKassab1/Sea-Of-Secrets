@@ -34,9 +34,22 @@
     <div class="landing">
       <div class="container">
         <div class="image">
-          <img src="images/new-cards2.png" alt="" />
+          <img src="images/landing-cards2.png" alt="" />
         </div>
       </div>
     </div>
   </body>
+
+  <script>const imageContainer = document.querySelector('.landing .container .image img');
+
+    document.querySelector('.landing .container .image').addEventListener('mousemove', function (e) {
+      const xAxis = (window.innerWidth / 2 - e.pageX) / 25;
+      const yAxis = (window.innerHeight / 2 - e.pageY) / 25;
+      imageContainer.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
+    });
+    
+    document.querySelector('.landing .container .image').addEventListener('mouseleave', function () {
+      imageContainer.style.transform = `rotateY(0deg) rotateX(0deg)`;
+    });
+    </script>
 </html>
