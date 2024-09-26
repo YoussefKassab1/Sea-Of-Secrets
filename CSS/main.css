@@ -94,9 +94,39 @@ a {
   justify-content: flex-end;
 }
 
+.header nav .toggle-menu {
+  font-size: 25px;
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 991px) {
+  .header nav .toggle-menu {
+    display: block;
+  }
+}
+
 .header nav ul {
   display: flex;
   gap: 20px;
+}
+
+@media (max-width: 991px) {
+  .header nav ul {
+    display: none;
+  }
+
+  .header nav .toggle-menu:hover + ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0px;
+    width: 100%;
+    background-color: rgb(0 0 0 / 70%);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
 }
 
 .header nav ul li {
