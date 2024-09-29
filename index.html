@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="CSS/Normalize.css" />
     <link rel="stylesheet" href="CSS/all.min.css" />
     <link rel="stylesheet" href="CSS/main.css" />
+    <link rel="stylesheet" href="CSS/pop-menu.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -50,113 +51,63 @@
       <div class="terms">
         <i class="fa-regular fa-circle-xmark exit"></i>
         <div class="inner-terms">
-          <h1>Terms of Service</h1>
-    
-          <h2>1. Acceptance of Terms</h2>
-          <p>By using ONVO TV, you agree to comply with and be bound by these terms of service. If you do not agree
-            to these terms, you are not authorized to use this application.</p>
-    
-          <h2>2. Purpose of the Application</h2>
-          <p>ONVO TV is designed to be a media player and video downloader application. It allows users to play and
-            download media files. This application does not host, provide, or endorse any torrent files or links.</p>
-    
-          <h2>3. User Responsibility</h2>
-          <p>You, the user, are solely responsible for ensuring that your use of ONVO TV complies with all
-            applicable laws and regulations. This includes, but is not limited to, the following responsibilities:</p>
-          <ul>
-            <li><strong>Legality of Content:</strong> You must ensure that any content you download, access, or play using
-              ONVO TV is legally obtained. Downloading or streaming copyrighted content without proper authorization
-              is illegal and strictly prohibited.</li>
-            <li><strong>Verification:</strong> You are responsible for verifying that any media you download or play using
-              ONVO TV is not copyrighted or that you have obtained the necessary permissions or licenses from the
-              copyright holder.</li>
-          </ul>
-    
-          <h2>4. Disclaimer of Liability</h2>
-          <ul>
-            <li>ONVO TV and its developers do not endorse, condone, or support the use of the application for
-              downloading or accessing illegal content.</li>
-            <li>ONVO TV and its developers shall not be held liable for any legal issues, damages, or consequences
-              arising from the use of the application for illegal purposes.</li>
-            <li>You acknowledge that ONVO TV is provided "as is" and "as available," without warranties of any kind,
-              either express or implied, including but not limited to warranties of merchantability, fitness for a
-              particular purpose, and non-infringement.</li>
-          </ul>
-    
-          <h2>5. Prohibited Use</h2>
-          <p>You agree not to use ONVO TV to:</p>
-          <ul>
-            <li>Download, stream, or access any content that is illegal, including copyrighted materials without
-              authorization.</li>
-            <li>Circumvent, disable, or otherwise interfere with security-related features of the application or features
-              that enforce limitations on use.</li>
-          </ul>
-    
-          <h2>6. Content Policy</h2>
-          <ul>
-            <li>ONVO TV does not host any media content or torrent files and is not responsible for the content that
-              users access or download using the application.</li>
-            <li>Any media files downloaded or played using ONVO TV are the sole responsibility of the user.</li>
-          </ul>
-    
-          <h2>7. Changes to Terms</h2>
-          <p>We reserve the right to modify these terms at any time. Any changes will be effective immediately upon posting
-            the updated terms within the application. Your continued use of the application after any changes signifies your
-            acceptance of the new terms.</p>
-    
-          <h2>8. Contact Information</h2>
-          <p>If you have any questions about these terms, please contact us at [Your Contact Information].</p>
-    
-          <h2>Disclaimer</h2>
-          <p><strong>ONVO TV is a tool for playing and downloading media files. We do not host, provide, or endorse
-              any illegal content or torrent files. Users are responsible for ensuring that their use of the application
-              complies with all applicable laws and that any content they download or access is legally obtained.</strong>
+          <h1>Sea Of Secrets</h1>
+
+          <p>
+            This project is a portal to a hidden world. A place where secrets
+            whisper and the unseen comes to light. It's a journey that will
+            challenge your perceptions, stir your emotions, and leave you
+            questioning everything you thought you knew about humanity.
           </p>
+
+          <p>
+            Your secret, once shared, will vanish into the depths of countless
+            others, like a key cast into the vast ocean. It's a liberation, a
+            release, a chance to unburden your soul amidst the anonymity of
+            shared confessions.
+          </p>
+
+          <h2>Features</h2>
+          <ul>
+            <li>
+              <strong>Anonymity Guaranteed:</strong> Your identity is never
+              revealed. Each secret you share is anonymized, ensuring complete
+              privacy and confidentiality.
+            </li>
+            <li>
+              <strong>Secret Vault:</strong> Once shared, your secret merges
+              with countless others, never to be traced back. It's a journey
+              into the collective consciousness.
+            </li>
+            <li>
+              <strong>Unburden Yourself:</strong> Share your deepest thoughts or
+              confessions with the comfort of knowing they will vanish into the
+              sea of secrets.
+            </li>
+          </ul>
+
+          <h2>Terms</h2>
+          <ul>
+            <li>
+              <strong>Mature Content Warning:</strong> We are not responsible
+              for secrets containing mature or aggressive content (+18).
+            </li>
+            <li>
+              <strong>Personal Information Disclosure:</strong> We are not
+              responsible for secrets that disclose personal information about
+              other individuals.
+            </li>
+            <li>
+              <strong>Deletion Token Policy:</strong> If you lose your deletion
+              token, we can assist in removing the secret from the platform, but
+              it will take some time.
+            </li>
+          </ul>
         </div>
       </div>
     </div>
   </body>
-
-  <script>
-    const imageContainer = document.querySelector('.landing .container .image img');
-const imageWrapper = document.querySelector('.landing .container .image');
-
-// Throttle function to improve performance
-function throttle(func, limit) {
-  let lastFunc;
-  let lastRan;
-  return function () {
-    const context = this;
-    const args = arguments;
-    if (!lastRan) {
-      func.apply(context, args);
-      lastRan = Date.now();
-    } else {
-      clearTimeout(lastFunc);
-      lastFunc = setTimeout(function () {
-        if (Date.now() - lastRan >= limit) {
-          func.apply(context, args);
-          lastRan = Date.now();
-        }
-      }, limit - (Date.now() - lastRan));
-    }
-  };
-}
-
-// Event handler function
-function rotateImage(e) {
-  const xAxis = (window.innerWidth / 2 - e.pageX) / 25;
-  const yAxis = (window.innerHeight / 2 - e.pageY) / 25;
-  imageContainer.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
-}
-
-// Throttled mousemove event
-imageWrapper.addEventListener('mousemove', throttle(rotateImage, 50));
-
-imageWrapper.addEventListener('mouseleave', function () {
-  imageContainer.style.transform = `rotateY(0deg) rotateX(0deg)`;
-});
-
-  </script>
+  <script src="JS/pop-menu.js"></script>
+  <script src="JS/3D-Images.js"></script>
   <script src="JS/menu.js"></script>
 </html>
