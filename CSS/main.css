@@ -144,6 +144,7 @@ a {
   border: 1px solid #ddd;
   border-radius: 10px;
   transition: 0.5s;
+  cursor: pointer;
 }
 
 .header nav ul .active::after {
