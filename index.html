@@ -5,8 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="CSS/Normalize.css" />
     <link rel="stylesheet" href="CSS/all.min.css" />
-    <link rel="stylesheet" href="CSS/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="CSS/pop-menu.css" />
+    <link rel="stylesheet" href="CSS/main.css" />
+    <link rel="stylesheet" href="CSS/cards-swaper.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -106,8 +112,34 @@
         </div>
       </div>
     </div>
+    <!-- start cards section  -->
+    <div class="cards-section">
+      <div class="container">
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="images/1.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/2.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/3.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/4.jpg" alt="" />
+            </div>
+            <!-- 15 div -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end cards section  -->
   </body>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script src="JS/pop-menu.js"></script>
   <script src="JS/3D-Images.js"></script>
   <script src="JS/menu.js"></script>
+  <script src="JS/card-swiper.js"></script>
 </html>
